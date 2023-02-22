@@ -1,0 +1,7 @@
+vim.keymap.set('n', '<Leader>xx', '<CMD>TroubleToggle<CR>')
+vim.keymap.set('n', '<Leader>xw', '<CMD>TroubleToggle workspace_diagnostics<CR>')
+vim.keymap.set('n', '<Leader>xd', '<CMD>TroubleToggle document_diagnostics<CR>')
+vim.keymap.set('n', '<Leader>xq', '<CMD>TroubleToggle quickfix<CR>')
+vim.keymap.set('n', '<Leader>xl', '<CMD>TroubleToggle loclist<CR>')
+vim.keymap.set('n', 'gR', '<CMD>TroubleToggle lsp_references<CR>')
+vim.keymap.set('n', '<C-f>', ':NvimTreeToggle<CR>')
