@@ -6,9 +6,9 @@ return {
 	alternate_buffer_wheel_scroll_speed = 10,
 	font = wezterm.font("JetBrains Mono"),
 	font_size = 12,
-	window_background_opacity = 0.95,
+	-- window_background_opacity = 0.95,
 
-	-- use_fancy_tab_bar = false,
+	use_fancy_tab_bar = false,
 	-- tab_bar_at_bottom = true,
 
 	enable_scroll_bar = true,
@@ -20,8 +20,8 @@ return {
 
 	keys = {
 		{key="q", mods="LEADER", action=wezterm.action{CloseCurrentPane={confirm=true}}},
-		{key="[", mods="LEADER", action=wezterm.action{SplitVertical={domain="CurrentPaneDomain"}}},
-		{key="]", mods="LEADER", action=wezterm.action{SplitHorizontal={domain="CurrentPaneDomain"}}}, 
+		{key="h", mods="LEADER", action=wezterm.action{SplitVertical={domain="CurrentPaneDomain"}}},
+		{key="v", mods="LEADER", action=wezterm.action{SplitHorizontal={domain="CurrentPaneDomain"}}}, 
 		--splits navigation
 		{key="j", mods="LEADER", action=wezterm.action{ActivatePaneDirection="Next"}},
 		{key="k", mods="LEADER", action=wezterm.action{ActivatePaneDirection="Prev"}},
@@ -36,14 +36,25 @@ return {
 
 	colors = {
 		scrollbar_thumb = 'gray',
-		background = '#121212'
+		background = '#333333',
+		foreground = '#F2F2F2',
+
+		brights = {
+		  'grey',
+		  'red',
+		  '4E9A06',
+		  'yellow',
+		  '3465A4',
+		  'AD7FA8',
+		  'aqua',
+		  'white',
+		},
 	},
 	
 	switch_to_last_active_tab_when_closing_tab = true,
 	enable_wayland = true,
 	scrollback_lines = 10000,
-
-	-- color_scheme = "Jellybeans",
+	
 }
 
 
